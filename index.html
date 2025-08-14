@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Verte Belem Oportunidades</title>
-        <link rel="styleshet" href="style.css"> 
+        <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
     
@@ -13,19 +12,17 @@
       <img src="conteudo/verteimg/verte.png" class="logo" />
       <img src="conteudo/verteimg/qrcodeverte.png" class="qrcode" />
       <div class="info">
-          <!-- posso colocar texto, links ou menus aqui -->
+        <h1>Oportunidades</h1>
       </div>
     </div>
 
-        <h1>Oportunidades</h1>
         <p>Rua Cajuru 74 - Belenzinho Catálogo de lojistas e prestadores de serviços do<br> Verte Belem</p>
         
         <script src="script.js"></script> <!-- chama o JS externo -->
     
         <div id="galeria1"></div>
     
-        <Script>
-    
+        <script>
             var dados1 = {
                 link: "https://chat.whatsapp.com/J6N0VZv4lsS98vVjpZ8HmN",
                 texto: "clique aqui para fazer parte do grupo do WhatssApp",
@@ -49,16 +46,17 @@
             var todos = [dados1, dados2, dados3,]
     
             var g1 = document.getElementById("galeria1")
+            
             for (i = 0; i < todos.length; i++) {
                 g1.innerHTML += `
                 <div class="galeria"> 
                     <a target="_blank" href="${todos[i].link}">
-                    <img src="${todos[i].image}" title="${todos[i].texto}"></a>
+                    <img src="${todos[i].image}" title="${todos[i].texto}">
                     <div class="texto">${todos[i].texto}</div>
                     </a>
                 </div>`
             }
-        </Script>
+        </script>
     
     
         <div style="clear: both;"></div>
@@ -188,7 +186,7 @@
                 {
                     perfil: "https://api.whatsapp.com/send?phone=5511947835607&text=prazer%20olhei%20seu%20perfil%20no%20site%20e%20me%20interessei.",
                     nome: "Fran",
-                    image:"verteimg/pastel.jpg",
+                    image:"conteudo/verteimg/pastel.jpg",
                     desc: "Massys distribuidora de pão de queijo",
                     texto: "Salgados, pão de queijo e massa pra pastel",
                 },
@@ -229,9 +227,7 @@
                 </div>`;
             }
             </script>
-    
-            </script>
-    
+        
             <div style="clear: both;"></div>
             <div id="tube">
                 <h3 style="text-align: center">Canais do YouTube</h3>
@@ -280,7 +276,7 @@
                 <h1>Oportunidades</h1>
                 
                 <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2CJs9P7jlfyKrZDnyFdOrgBD5HUQ9OA5YXSmHKHIOjv3e4w/viewform?usp=sf_link"
-                        style="color: white;" target="_blanck">
+                        style="color: white;" target="_blank">
                         clique aqui, preencha o formulario e faça parte do nosso site.
                     </a>
     
@@ -289,7 +285,7 @@
                     <h1>Desenvolvedor</h1>
     
                     <a href="https://github.com/MrMaicke"
-                    style="color: white;" target="_blanck">
+                    style="color: white;" target="_blank">
                     Marcelo Santiago.
                 </a>
             </p>
